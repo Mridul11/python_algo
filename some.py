@@ -14,6 +14,7 @@ class Person:
 		@classmethod
 		def classMethodExample(cls):
 			print("Adding class Method")
+			print("Adding class Method again!")
 			print(cls)
 
 
