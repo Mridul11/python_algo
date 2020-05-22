@@ -9,7 +9,7 @@ class Person:
 
 		@staticmethod
 		def staticMethod():
-			print("I am static method!")
+			print("I am static method and i work!")
 
 
 
