@@ -8,8 +8,9 @@ class Person:
 				self.__private(1)
 
 		@staticmethod
-		def staticMethod():
+		def staticMathod():
 			print("I am static method !")
+			print(1+1)
 
 		@classmethod
 		def classMethodExample(cls):
