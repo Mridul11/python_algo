@@ -1,6 +1,7 @@
 class Person:
 		def __private(self,num):
 				print("I am private!") 
+				print("Hey tis private")
 				print(num)
 
 		def public(self):
