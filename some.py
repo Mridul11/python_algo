@@ -5,6 +5,10 @@ class Person:
 				print("printintg anothee one!")
 				print(num)
 
+		def run(self):
+			print("I am running!")
+
+
 		def public(self):
 				print("I am public!")
 				self.__private(1)
