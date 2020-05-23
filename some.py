@@ -10,7 +10,7 @@ class Person:
 		@staticmethod
 		def staticMathod():
 			print("I am static method !")
-			print(1+1)
+			print(f'1+1')
 
 		@classmethod
 		def classMethodExample(cls):
