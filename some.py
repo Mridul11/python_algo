@@ -14,8 +14,8 @@ class Person:
 		@classmethod
 		def classMethodExample(cls):
 			print("Adding class Method")
-			print("Master branch code")
 			print("I am a feature_a change!")
+			print("Master branch change")
 			print(cls)
 
 
