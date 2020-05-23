@@ -2,6 +2,7 @@ class Person:
 		def __private(self,num):
 				print("I am private!") 
 				print("Hey tis private")
+				print("printintg anothee one!")
 				print(num)
 
 		def public(self):
