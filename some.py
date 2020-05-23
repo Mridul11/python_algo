@@ -7,7 +7,6 @@ class Person:
 
 		def run(self):
 			print("I am running!")
-			print("running again!")
 
 
 		def public(self):
