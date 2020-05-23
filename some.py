@@ -10,7 +10,7 @@ class Person:
 		@staticmethod
 		def staticMathod():
 			print("I am static method !")
-			print(f'1+1')
+			print(f'1 is one')
 			print(1+1)
 			print(f"This si static method which is working fine")
 
