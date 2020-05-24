@@ -1,8 +1,6 @@
 class Person:
 		def __private(self,num):
-				print("I am private!") 
-				print("Hey tis private")
-				print("printintg anothee one!")
+				print("I am private and can not be called outside of this class!") 
 				print(num)
 
 		def run(self):
