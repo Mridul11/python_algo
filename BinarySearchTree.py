@@ -16,7 +16,7 @@ class Bst(object):
 
         else:
             root_node = self.root
-            if(root_node.val > val) :
+            if(root_node.val > val):
                 if(root_node.left is None):
                     root_node.left = new_node
                 else:
@@ -28,14 +28,20 @@ class Bst(object):
                 else:
                     root_node = root_node.right
 
+    def find(self, val):
+        current = self.root 
+        if current is not None and current.val is val:
+            return current.val 
+        elif(val < current.val and current.left is not None): 
+            current.left.find()
+        elif(val > current.val and current.right is not None):
+            current.right.find(val)
 
     def print_nodes(self):
         root_node = self.root
         print(root_node.val)
         print(root_node.left.val)
-
         print(root_node.right.val)
-        # print(root_node.right.right.val)
 
 
 bst = Bst()
@@ -46,7 +52,7 @@ bst.insert(32)
 bst.insert(2)
 
 bst.print_nodes()
-
+print(bst.find(32))
 
 
 

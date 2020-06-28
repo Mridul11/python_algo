@@ -1,7 +1,6 @@
 import random 
 import multiprocessing, os 
 
-
 class Test(object):
 
     def test_print_2d_array(self, n):
@@ -25,10 +24,7 @@ class Test(object):
 
     #   mridul => ludirm
     def test_reverse(self, str):
-        if (len(str) <= 1):
-            return str
-        else:
-            return str[len(str) - 1] + self.test_reverse(str[0: len(str) - 1])
+        print(str[::-1])
 
     def product(self, a, b):
         return "product is : " + str(a * b)
@@ -50,23 +46,21 @@ class Test(object):
         return ( k == pre )
 
 
-
-
 test = Test()
 # answer = (test.product if True else test.add) (2,3)
 # print( answer )
-# test.test_print_2d_array(3)
-# test.test_print_dict_values_to_list()
-# test.test_2d_array()
-# print(test.test_reverse("mridul") )
+test.test_print_2d_array(5)
+test.test_print_dict_values_to_list()
+test.test_2d_array()
+test.test_reverse("mridul")
 # print(test.test_recursion(5) )
 print( test.isPalindrome( 12021 ) )
 
-sum = 0 
-for i in range(0,50000000):
-    sum += random.randint(0,10)
+# sum = 0 
+# for i in range(0,50000000):
+#     sum += random.randint(0,10)
+# print(sum)
 
-print(sum)
 # print(multiprocessing.cpu_count())
 # print(os.cpu_count())
 
