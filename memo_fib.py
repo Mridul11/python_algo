@@ -1,6 +1,7 @@
 class MemoFibonacci(object):
     def fib(self, n, memo):
         if n == 0 or n == 1:
+            print(memo)
             memo[n] = n
 
         if memo[n] is None:

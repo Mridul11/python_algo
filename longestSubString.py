@@ -5,7 +5,7 @@ class Solution(object):
       d = {}
       ans = 0
       while j < len(s):
-         if s[j] not in d or i>d[s[j]]:
+         if s[j] not in d or i > d[s[j]]:
             ans = max(ans,(j-i+1))
             d[s[j]] = j
          else:
