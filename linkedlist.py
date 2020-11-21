@@ -35,14 +35,12 @@ class LinkedList:
         start = self.head
         tail = start
         try:
-            while(tail.next is not None):
+            while(tail is not None):
                 print(tail.val)
                 tail = tail.next
         except expression as identifier:
             print(e)
                 
-            
-
     def unshift(self, val):
         """
         pushes the new node at the begining of the list!
@@ -62,13 +60,27 @@ class LinkedList:
         """
         print(self.length)
 
-     
-            
+    def shift(self):
+        """
+        reoves the first node from the list!
+        """
+        if self.head is None:
+            print("List is empty!")
+            return
+        else:
+            head = self.head
+            second = head.next
+            head.next = None
+            head = second
+        self.length -= 1 
+
 
 ll = LinkedList()
 ll.push("I ")
 ll.push("am ")
 ll.push("the Best! ")
+ll.push("yo ")
 ll.unshift("who is the Best? ")
+ll.shift()
 ll.display_list()
 ll.countNodes()
