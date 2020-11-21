@@ -1,9 +1,7 @@
 class Solution(object):
    def lengthOfLongestSubstring(self, s):
-      i = 0
-      j = 0
-      d = {}
-      ans = 0
+      i, j, d, ans = 0, 0, {}, 0
+
       while j < len(s):
          if s[j] not in d or i > d[s[j]]:
             ans = max(ans,(j-i+1))
@@ -17,6 +15,6 @@ class Solution(object):
          j+=1
       return ans
 
-ob1 = Solution()
-# print(ob1.lengthOfLongestSubstring("ABCABCBB"))
-print(ob1.lengthOfLongestSubstring("BBB"))
+obj = Solution()
+print(obj.lengthOfLongestSubstring("ABCABCBB"))
+#print(obj.lengthOfLongestSubstring("BBB"))

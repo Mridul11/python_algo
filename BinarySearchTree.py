@@ -53,7 +53,3 @@ bst.insert(2)
 
 bst.print_nodes()
 print(bst.find(32))
-
-
-
-

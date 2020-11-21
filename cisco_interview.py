@@ -1,5 +1,4 @@
 # find the misssing number
-
 def find_missing_one(lst):
     n = len(lst)
     total = (n+1) * (n+2) / 2 

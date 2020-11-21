@@ -1,4 +1,4 @@
-import sys 
+import sys
 
 inp = input("Hey please input a number: ")
 syst = sys.argv[1]

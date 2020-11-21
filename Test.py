@@ -1,5 +1,5 @@
-import random 
-import multiprocessing, os 
+import random
+import multiprocessing, os
 
 class Test(object):
 
@@ -56,13 +56,13 @@ test.test_reverse("mridul")
 # print(test.test_recursion(5) )
 print( test.isPalindrome( 12021 ) )
 
-# sum = 0 
+# sum = 0
 # for i in range(0,50000000):
 #     sum += random.randint(0,10)
 # print(sum)
 
-# print(multiprocessing.cpu_count())
-# print(os.cpu_count())
+print('Cpu count is {}'.format(multiprocessing.cpu_count()))
+print('no of cores in cpu is {}'.format(os.cpu_count()))
 
 
 
